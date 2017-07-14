@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round';
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+top-bar {
+  display: block;
+  height: 15px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 200ms ease-in-out;
+}
+
+a:hover {
+  color: #AAA;
+}
+
+/* Top-level page elements */
+column-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+
+column-left {
+  position: fixed;
+  left: 5%;
+  height: 100%;
+  width: 15%;
+  padding-top: 4.5%;
+  padding-right: 5%;
+  border-right: 1px solid #EEE;
+}
+
+column-right {
+  padding-left: 30%;
+  padding-right: 5%;
+  justify-content: center;
+}
+
+/* Tablets and mobile */
+@media (max-width: 800px) {
+  column-left {
+    display: none;
+  }
+  column-right {
+    padding-left: 5%;
+  }
+}
+
+/* left-column elements */
+back-button a {
+  color: #BBB;
+}
+
+page-title {
+  display: block;
+  font-size: 36;
+  font-weight: bold;
+  letter-spacing: 1;
+  margin-bottom: 10%;
+  margin-top: 1%;
+}
+
+post-title {
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1em;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+post-title::before {
+  content: '#';
+  font-size: 2.5em;
+  margin-right: -2.5%;
+  color: #EEE;
+}
+
+/* Markdown tutorial styles */
+h1:first-child {
+  padding-top: 5%;
+} 
+h1 {
+  padding-top: 7.5%;
+}
+
+pre {
+  background-color: #333;
+  width: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  color: #eee;
+}
+
+pre code {
+  margin-left: 5%;
+  margin-right: 5%;
+}
