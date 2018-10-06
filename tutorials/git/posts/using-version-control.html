@@ -1,14 +1,111 @@
-Here are some of the most common commands, roughly in the order you will encounter them: <br>
+<!-- Getting Help -->
 
-<blockquote>git init</blockquote>
-<br>
-This will create a hidden .git folder inside your current folder — this is the "repository" (or repo) where git stores all of its internal tracking data. Any changes you make to any files within the original folder will now be possible to track. <br>
-<br>
-✨ The original folder is now referred to as your working directory, as opposed to the repository (the .git folder) that tracks your changes. You work in the working directory. Simple! <br>
-<br>
-    Clone an existing repo: <br>
-<br>
-<blockquote>git clone https://github.com/cooperka/emoji-commit-messages.git</blockquote>
-<br>
-This will download a .git repository from the internet (GitHub) to your computer and extract the latest snapshot of the repo (all the files) to your working directory. By default it will all be saved in a folder with the same name as the repo (in this case emoji-commit-messages).<br>
-<br>
+<h2>Getting Help</h2>
+If you ever need help while using Git, there is a way to get the manual page (manpage) <strong>help</strong> for any of the Git commands. You can <strong>type</strong> <code>git help &lt;command&gt;</code> , where <code>&lt;command&gt;</code> is a git command, for example <i>add</i>, <i>clone</i>, <i>commit</i>, etc. <br>
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr;"></span>git help add <br>
+    <span class="response">usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt; ... ...</span>
+  </div>
+</div>
+
+<!-- Basic Usage -->
+
+<h2>Git Basic</h2>
+
+A Git repository is contained in a .git directory, which holds the revision history and other metadata. The directory tracked by the repository, by default the parent directory, is called the working directory. Changes in the working tree need to be staged before they can be recorded (committed) to the repository. Git also lets you restore, previously committed, working tree files. <br>
+
+<h3>&rsaquo; Starting git project ( <code>git init</code> )</h3>
+
+If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory, initialize git with command <code>git init</code>. <br>
+In this example, we create new folder for our git project.
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr;"></span>mkdir learn-git <br>
+    <span class="directory" data-dir-name="&rarr;"></span>cd learn-git <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git init <br>
+    <span class="response">Initialized empty Git repository in /home/user/path/to/learn-git/.git/</span>
+  </div>
+</div>
+
+<h3>&rsaquo; Cloning git project ( <code>git clone</code> )</h3>
+
+If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is <code>git clone &lt;url&gt;</code>. <code>&lt;url&gt;</code> is a path or link that you want to clone from git repository, e.g <i>github</i>, <i>gitlab</i>, etc.
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git clone https://github.com/maaslalani/Codev<br>
+    <span class="response">Cloning into 'Codev'...</span> <br>
+    <span class="response">remote: Enumerating objects: 86, done.</span> <br>
+    <span class="response">remote: Total 86 (delta 0), reused 0 (delta 0), pack-reused 86</span> <br>
+    <span class="response">Receiving objects: 100% (86/86), 1.01 MiB | 413.00 KiB/s, done.</span> <br>
+    <span class="response">Resolving deltas: 100% (18/18), done.</span> <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>cd Codev<br>
+    <span class="directory" data-dir-name="&rarr; learn-git/Codev"></span><br>
+  </div>
+</div>
+
+<h3>&rsaquo; Recording changes ( <code>git add</code>,&nbsp;<code>git status</code>,&nbsp;<code>git commit</code> )</h3>
+
+<p>
+    <code>git add</code> is add modified and new (untracked) files to the staging area (a.k.a. the index). You can use <code>git add .</code> for add all modified files
+</p>
+<p>
+    <code>git status</code> The command checks the status and reports that there’s nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.
+</p>
+<p>
+    <code>git commit -m &lt;message&gt;</code> commit the staged changes to the repository with a message which indicates the changes you made.
+</p>
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>touch index.html<br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git status<br>
+    <span class="response">On branch master
+    Your branch is up to date with 'origin/master'. <br>
+    Untracked files:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;(use "git add &lt;file&gt;..." to include in what will be committed)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red;">index.html</span> <br>
+    nothing added to commit but untracked files present (use "git add" to track)</span> <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git add .<br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git status<br>
+    <span class="response">On branch master
+    Your branch is up to date with 'origin/master'. <br>
+    Changes to be committed: <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;(use "git reset HEAD &lt;file&gt;..." to unstage) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: green">new file:   index.html</span></span> <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git commit -m "create index.html file" <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git status<br>
+    <span class="response">On branch master <br>
+    Your branch is ahead of 'origin/master' by 1 commit. <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;(use "git push" to publish your local commits)
+    nothing to commit, working tree clean</span> <br>
+    <span class="directory" data-dir-name="&rarr; learn-git"></span><br>
+  </div>
+</div>
