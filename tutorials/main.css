@@ -115,10 +115,6 @@ pre code {
 
 /* Terminal Faker */
 
-.terminal-fullwidth {
-  width: 100% !important;
-}
-
 .fake-terminal {
   width: 550px;
   margin: 1rem auto 3rem;
@@ -175,16 +171,18 @@ pre code {
 }
 
 span.directory::before {
-  content: '>';
+  content: attr(data-dir-name);
   color: #379AF0;
   padding-right: .5rem;
 }
 
-.title {
-  text-align: center;
+span.response {
+  color: #AAAAAA;
 }
 
-.sub-title {
+/* End Of Terminal Fake */
+
+.text-center {
   text-align: center;
 }
 
