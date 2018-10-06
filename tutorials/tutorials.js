@@ -26,16 +26,20 @@ posts.forEach(title => {
     `
     sidebar.append(container)
 
+
     // Content posts
     let xhr = new XMLHttpRequest()
     xhr.open('GET', `./posts/${escapedTitle}.html`)
     xhr.send(null)
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
+        let converter = new showdown.Converter()
+        let text = xhr.responseText
+        let html = converter.makeHtml(text)
         let tutorial = document.createElement('div')
         tutorial.innerHTML = `
           <h1 id="${escapedTitle}">${title}</h1>
-          <p>${xhr.responseText}</p>
+          <p>${html}</p>
         `
         content.append(tutorial)
       }

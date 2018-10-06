@@ -1,26 +1,51 @@
-You should check your status anytime you’re confused. Git will print additional information depending on what’s currently going on in order to help you out. <br>
-<br>
-    <b>Create a new branch name: </b>
+You should check your status anytime you’re confused. Git will print additional information depending on what’s currently going on in order to help you out.
 
-<blockquote>git branch </blockquote>
-<br>
-You can think of this like creating a local “checkpoint” (technically called a reference) and giving it a name. It’s similar to doing File > Save as… in a text editor; the new branch that gets created is a reference to the current state of your repo. The branch name can then be used in various other commands as you’ll soon see. <br>
-<br>
-Similar to branching, more commonly you will save each checkpoint as you go along in the form of commits (see git commit below soon). <br>
-<br>
-Commits are a particular type of checkpoint called a revision. The name will be a random-looking hash of numbers and letters such as e093542. This hash can then be used in various other commands just like branch names. <br>
-<br>
-    ✨ That’s really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this concept. <br>
-<br>
-If you’ve ever created a checkpoint to something, you’ll be able to get back to it later as long as your .git folder is intact. It’s magical. See git reflog if you’re interested in learning more. <br>
-<br>
-Branching is a huge and complex topic. I’ll write more about it soon; for now you can read more here if you want to. <br>
-<br>
-    <b>Check out a particular branch: </b>
-<br>
-<blockquote>git checkout </blockquote>
-<br>
-You can think of this like “resuming” from an existing checkpoint. All your files will be reset to whatever state they were in on that particular branch. <br>
-<br>
-⚠️ Keep in mind that any changes in your working directory will be kept around. See git stash if you’re interested in a simple way to avoid headaches. <br>
-<br>
+<h3>Create a new branch name:</h3>
+
+<pre>
+  <code>
+    git branch  
+  </code>
+</pre>
+
+<p>
+  You can think of this like creating a local <code>“checkpoint”</code> (technically called a reference) and giving it a name. It’s similar to doing File > Save as… in a text editor; the new branch that gets created is a reference to the current state of your repo. The branch name can then be used in various other commands as you’ll soon see.
+</p>
+
+<p>
+
+<p>
+  Similar to branching, more commonly you will save each checkpoint as you go along in the form of commits (see git commit below soon). 
+</p>
+
+<p>
+  Commits are a particular type of checkpoint called a revision. The name will be a random-looking hash of numbers and letters such as e093542. This hash can then be used in various other commands just like branch names.
+</p>
+
+<p>
+  ✨ That’s really the core function of git: To save checkpoints (revisions) and share them with other people. Everything revolves around this   concept.
+</p>
+
+<p>
+  If you’ve ever created a checkpoint to something, you’ll be able to get back to it later as long as your .git folder is intact. It’s magical. See git reflog if you’re interested in learning more. 
+</p>
+
+<p>
+  Branching is a huge and complex topic. I’ll write more about it soon; for now you can read more here if you want to. 
+</p>
+
+<h3>Check out a particular branch:</h3>
+
+<pre>
+  <code>
+    git checkout
+  </code>
+</pre>
+
+<p>
+  You can think of this like “resuming” from an existing checkpoint. All your files will be reset to whatever state they were in on that particular branch. 
+</p>
+
+<p>
+  ⚠️ Keep in mind that any changes in your working directory will be kept around. See git stash if you’re interested in a simple way to avoid headaches. 
+</p>
