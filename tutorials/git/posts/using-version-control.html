@@ -109,3 +109,58 @@ If you want to get a copy of an existing Git repository — for example, a p
     <span class="directory" data-dir-name="&rarr; learn-git"></span><br>
   </div>
 </div>
+
+<h2>Push repository to github</h2>
+
+<p>To put your project up on GitHub, you'll need to <strong>create a repository</strong> for it to live in. You can visit <a href="https://help.github.com/articles/create-a-repo/" target="_blank" title="repo github" style="text-decoration: underline;">this page</a> to create repository on github.</p>
+
+<p>After create repository on github, at the top of your GitHub repository's, <strong>copy the remote repository</strong> URL. for example : <i>https://github.com/maaslalani/Codev.git</i></p>
+
+<p>Use command <code>git remote add origin &lt;url&gt;</code> to add the URL for the remote repository where your local repository will be pushed. Replace <code>&lt;url&gt;</code> with your github repository's.</p>
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git remote add origin https://github.com/maaslalani/Codev<br>
+  </div>
+</div>
+
+<p>Verify the new remote URL with command <code>git remote -v</code></p>.
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git remote -v<br>
+    <span class="response">origin   git@github.com:maaslalani/Codev.git (fetch)</span> <br>
+    <span class="response">origin   git@github.com:maaslalani/Codev.git (push)</span>
+  </div>
+</div>
+
+<p>And finally, push your local git repository to github with command <code>git push origin master</code></p>.
+
+<div class="fake-terminal" style="width: 80% !important;">
+  <div class=fake-menu>
+    <div class="fake-buttons fake-close"></div>
+    <div class="fake-buttons fake-minimize"></div>
+    <div class="fake-buttons fake-zoom"></div>
+    <span class="fake-menu-title">terminal</span>
+  </div>
+  <div class="fake-screen">
+    <span class="directory" data-dir-name="&rarr; learn-git"></span>git push origin master<br>
+    <span class="response">Enumerating objects: 7, done.</span> <br>
+    <span class="response">Counting objects: 100% (7/7), done.</span> <br>
+    <span class="response">...</span> <br>
+    <span class="response">To github.com:maaslalani/Codev.git.git</span> <br>
+    <span class="response">&nbsp;&nbsp;&nbsp;&nbsp;b760ded..b4976b2  master -> master</span>
+  </div>
+</div>
