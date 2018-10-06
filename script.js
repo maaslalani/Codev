@@ -4,7 +4,7 @@ const tutorials = {
   Python: 3,
   Git: 2,
   Angularjs: 2,
-  Javascript: 8
+  Javascript: 8,
 }
 
 let column = document.querySelector('column-right')

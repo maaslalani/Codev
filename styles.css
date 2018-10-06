@@ -68,8 +68,36 @@ page-subtitle {
 
 page-description {
   display: block;
-  margin-top: 8%;
+  margin-top: 5%;
   text-align: justify;
+}
+
+internship-title {
+  display: block;
+  font-size: 36;
+  font-weight: bold;
+  letter-spacing: 2;
+  margin-top: 15%;
+}
+
+internship-description {
+  display: block;
+  margin-top: 1%;
+  text-align: justify;
+}
+
+internship-link {
+  display: block;
+  font-size: 18;
+  margin-top: 5%;
+  letter-spacing: 1;
+  align-items: center;
+  color: #000;
+}
+
+internship-header img {
+  width: 100%;
+  margin-top: 10%;
 }
 
 youtube-title {
