@@ -129,19 +129,26 @@ h2 {
 }
 
 pre {
-  background-color: #333;
   width: 100%;
   padding-bottom: 2%;
   padding-top: 2%;
-  color: #EEE;
+  background-color: rgba(27,31,35,0.05);
 }
 
 pre code {
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #333;
+  margin: 0;
+  padding: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 0px;
+  background-color: transparent;
 }
 
 code {
-  background-color: grey;
+  font-family: courier;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
 }
