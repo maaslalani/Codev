@@ -11,7 +11,7 @@ let column = document.querySelector('column-right')
 
 for (language in tutorials) {
   let template = `
-    <a href="./tutorials/${language.toLowerCase()}/index.html">
+    <a href="./tutorials/${language.toLowerCase()}/">
       <tutorial-card>
         <tutorial-title>
           <i class="devicon-${language.toLowerCase()}-plain"></i>
