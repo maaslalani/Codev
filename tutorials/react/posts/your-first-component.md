@@ -1,5 +1,6 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non totam minima odit, quos odio maxime dignissimos quo quam cupiditate rem esse, nemo, vero, nostrum reiciendis voluptate sit officiis ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est non totam minima odit, quos odio maxime dignissimos quo quam cupiditate rem esse, nemo, vero, nostrum reiciendis voluptate sit officiis ut.
+Here is an example of a React Component
 
+```
 import React, { Component } from 'react';
 import Header from './Header.js';
 import Action from './Action.js';
@@ -51,3 +52,4 @@ class App extends Component {
 }
 
 export default App;
+```
