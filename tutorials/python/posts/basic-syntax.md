@@ -1,8 +1,8 @@
-#Basic Python Syntax
+# Basic Python Syntax
 
-###Introduction
+## Introduction
 
-Python is reknown for having a streamlined syntax that makes it easy to read and write (relative to other programming languages). 
+Python is renown for having a streamlined syntax that makes it easy to read and write (relative to other programming languages). 
 
 The programmer can be more focused on getting the logic correct instead of being bogged down in sytanx errors; this makes it a great choice for a first programming language!
 
@@ -22,9 +22,7 @@ public class HelloWorld {
 
 ```
 
----
-
-###Whitespace
+## Whitespace
 
 Another difference in Python syntax compared to some other language is the use of *whitespace*. 
 
@@ -54,9 +52,8 @@ def hello_world(loops):
 hello_world(5)
 ```
 
----
 
-### Comments
+## Comments
 
 As inherently readable as Python code may be, comments are still a useful and sometimes necessary way to help clarify the meaning of your code. 
 
@@ -84,9 +81,8 @@ And all of it will be ignored by the interpreter!
 """
 
 ```
----
 
-###Variables and Data Types
+## Variables and Data Types
 
 Python uses primitives such as integers, strings, floats, and booleans. 
 
@@ -112,5 +108,3 @@ one = True
 print(one)
 ```
 In the example above, when we print the value of the variable ```one```, we would end up printing the boolean value of ```True```, as that is the value that was last assigned to that variable.
-
----
