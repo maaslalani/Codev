@@ -8,7 +8,7 @@ The programmer can be more focused on getting the logic correct instead of being
 
 For example, the line of code below is how you would write the traditional "Hello World" program in **Python 3**
 
-```print(hello world)```
+`print(hello world)`
 
 Compare this to the same program in **Java**
 
@@ -16,10 +16,12 @@ Compare this to the same program in **Java**
 public class HelloWorld {
 
   public static void main (String[] args){
-	System.out.println("Hello World!");
-  }
-}
 
+    System.out.println("Hello World!");
+
+  }
+
+}
 ```
 
 ---
@@ -54,13 +56,12 @@ def hello_world(loops):
 hello_world(5)
 ```
 
----
 
-### Comments
+## Comments
 
 As inherently readable as Python code may be, comments are still a useful and sometimes necessary way to help clarify the meaning of your code. 
 
-To write a single line comment, simply use the ```#``` sign and then write your comment.
+To write a single line comment, simply use the `#` sign and then write your comment.
 
 ```
 # This is a single-line comment in Python
@@ -68,38 +69,32 @@ To write a single line comment, simply use the ```#``` sign and then write your 
 # All three will be ignored by the intepreter
 ```
 
-Sometimes, you will need to write a comment that takes up more than one line. To do this, you would make use of a docstring, which is made up of three double qoutes, ```"""```
+Sometimes, you will need to write a comment that takes up more than one line. To do this, you would make use of a docstring, which is made up of three double qoutes, `"""`
 
 ```
 """
 This is a Python Docstring.
-
-
 It can take up many lines.
-
-
 And all of it will be ignored by the interpreter!
+<<<<<<< HEAD
 
+=======
+>>>>>>> 17e7d840288ffe7f7b600d6813ccf21839b12fe8
 """
-
 ```
----
+
 
 ### Variables and Data Types
 
 Python uses primitives such as integers, strings, floats, and booleans. 
 
-To assign a value to a variable, simply use the ```=``` operator.
+To assign a value to a variable, simply use the `=` operator.
 
 ```
 my_string = "This is a string"
-
 my_int = 42
-
 my_float = 3.14
-
 my_bool = False
-
 ```
 
 However, Python is not strict about type! Therefore, you could assign a value of a different type to the same variable.
@@ -113,6 +108,7 @@ one = True
 
 print(one)
 ```
+
 In the example above, when we print the value of the variable ```one```, we would end up printing the boolean value of ```True```, as that is the value that was last assigned to that variable.
 
 ---

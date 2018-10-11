@@ -22,11 +22,13 @@ Here, you will find written tutorials on how to get started with a language or f
 
 #### Knowledge Base
 * Programming Fundamentals
+* Algorithms and Data Structure
 * Networking
 * Resume
 
 #### Interviewing
 * Life Story
+* Behaviorial 
 * Technical
 
 #### Offers
