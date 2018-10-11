@@ -238,5 +238,4 @@ Note the use of ```not``` in the example above. We can also use other operators 
 if foo == bar:
     print("They're the same!")
 
-```
-
+``` 
