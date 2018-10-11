@@ -1,5 +1,3 @@
-# Basic Python Syntax
-
 ## Introduction
 
 Python is renown for having a streamlined syntax that makes it easy to read and write (relative to other programming languages). 
