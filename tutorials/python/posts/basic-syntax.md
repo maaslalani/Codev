@@ -60,9 +60,9 @@ As inherently readable as Python code may be, comments are still a useful and so
 To write a single line comment, simply use the `#` sign and then write your comment.
 
 ```
-# This is a single-line comment in Python
-# So is this!
-# All three will be ignored by the intepreter
+This is a single-line comment in Python
+So is this!
+All three will be ignored by the intepreter
 ```
 
 Sometimes, you will need to write a comment that takes up more than one line. To do this, you would make use of a docstring, which is made up of three double qoutes, `"""`
