@@ -37,5 +37,3 @@ class Ball:
             velocity.y = -velocity.y
         # Repeat for other three walls
 ```
-
-## Writing Classes in Python
