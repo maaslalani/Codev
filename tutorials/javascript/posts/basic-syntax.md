@@ -90,5 +90,4 @@ The variable new is assigned the value of 1993 */
 var new; // This is declaration for the variable new
 
 new = 1993; 
-
 ```
