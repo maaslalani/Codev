@@ -1,55 +1,14 @@
-Here is an example of a React Component
+React lets you define components as classes or functions. Here is a basic example of a react component.
 
 ```
-import React, { Component } from 'react';
-import Header from './Header.js';
-import Action from './Action.js';
-import Options from './Options.js';
-import AddOption from './AddOption.js';
-
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      title: "Indecision App",
-      sub: "Put your life in the hands of a computer.",
-      options: ["One", "Two", "Three"]
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
   }
-  this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
-  this.handlePickOptions = this.handlePickOptions.bind(this);
 }
-
-  handleDeleteOptions = () => {
-    this.setState(() => {
-      return {
-        options: []
-      }
-    })
-  }
-
-  handlePickOptions = () => {
-    const rand = Math.floor( Math.random() * this.state.options.length );
-    const option = this.state.options[rand];
-    alert(option);
-  }
-
-  render(){
-    return (
-      <div>   
-        <Header title = {this.state.title} sub = {this.state.sub} />
-        <Action 
-        hasOptions = {this.state.options.length > 0} 
-        handlePickOptions = {this.handlePickOptions}
-        />
-        <Options 
-          options ={this.state.options}
-          handleDeleteOptions = {this.handleDeleteOptions}
-        />
-        <AddOption />
-      </div>
-  );
-}
-}
-
-export default App;
 ```
+
+To learn more about components, walkthrough this [tutorial](https://reactjs.org/).
+
+Watch [this video](https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf) to see a component in practice.
+

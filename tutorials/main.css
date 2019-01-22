@@ -25,6 +25,12 @@ a:hover {
   color: #AAA;
 }
 
+/* First link is always empty, do not underline */
+column-right div a {
+  text-decoration: underline;
+}
+
+
 /* Top-level page elements */
 column-layout {
   display: flex;
