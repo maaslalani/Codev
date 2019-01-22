@@ -1,0 +1,3 @@
+Server rending in React is exciting because it allows you to pair react with your favourite back-end technologies. Server Side Rendering in React helps you to create components in the server and render that as HTML in your browser. Once all the JavaScript modules are downloaded in the browser, React takes over.
+
+A great place to start is the [official react documentation](https://reactjs.org/docs/react-dom-server.html). Then, read the guide to [using react with express](https://medium.com/front-end-weekly/server-side-rendering-with-react-and-express-382591bfc77c) and server side rendering with [styled components in react](https://medium.com/styled-components/the-simple-guide-to-server-side-rendering-react-with-styled-components-d31c6b2b8fbf).
