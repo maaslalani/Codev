@@ -26,7 +26,7 @@ a:hover {
 }
 
 column-right div a {
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }
 
 /* Top-level page elements */
@@ -102,6 +102,10 @@ internal-link {
   font-size: 1em;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+column-right div internal-link a {
+  border-bottom: none; 
 }
 
 internal-link::before {
