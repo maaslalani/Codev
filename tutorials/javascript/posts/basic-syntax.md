@@ -75,10 +75,10 @@ Here *firstname* and *firstName* are two different variables.
 
 Comments are used to write code which we do not want to execute. There are 2 ways to do it in JavaScript that are:
 
-1. //
+1. `//`
 This is generally used for single line comments.
 
-2. /* ... */
+2. `/* ... */`
 This is used for multiple lines of comments.
 
 Here is an example.

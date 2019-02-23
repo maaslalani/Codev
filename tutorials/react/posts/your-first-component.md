@@ -1,6 +1,6 @@
 React lets you define components as classes or functions. Here is a basic example of a react component.
 
-```
+```java
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;

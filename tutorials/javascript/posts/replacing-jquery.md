@@ -1,1 +1,1 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam, ea non laboriosam aperiam, odio possimus accusantium minima, a facilis cupiditate! Maiores, laboriosam officia harum in eligendi alias, quidem expedita.
+If you have ever used JQuery in a web project, it might be overkill. You might not need JQuery and should probably just use vanilla JavaScript for you project, visit [youmightnotneedjquery.com](http://youmightnotneedjquery.com/).
