@@ -63,6 +63,9 @@ column-right {
   column-right {
     padding-left: 5%;
   }
+  pre {
+    display: none;
+  }
 }
 
 /* left-column elements */
