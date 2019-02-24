@@ -120,7 +120,10 @@ internal-link::before {
 
 #phase-0 span,
 #phase-1 span,
-#phase-2 span {
+#phase-2 span,
+#phase-3 span,
+#phase-4 span,
+#phase-5 span {
   font-family: monospace;
   font-size: 0.75em;
   display: block;

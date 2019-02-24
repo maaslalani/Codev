@@ -1,0 +1,7 @@
+column-left {
+  overflow: scroll;
+}
+
+column-left::-webkit-scrollbar {
+    width: 0px;
+}
